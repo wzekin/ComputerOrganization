@@ -1,0 +1,7 @@
+*.log
+*.pdf
+*.vcd
+*.mux
+*.mem
+build
+

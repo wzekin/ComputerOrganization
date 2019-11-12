@@ -1,0 +1,63 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+
+\title{计算机组成原理期中报告}
+\author{王泽坤 2018211301 2018211236}
+\begin{document}
+\maketitle
+\section{系统综述}
+本架构指令格式采取变长指令集,系统指针长度为64位,一共有24个指令，用1字节寻址，有15个寄存器，用4bit寻址
+\subsection{ALU寄存器}
+ALU寄存器即能被ALU直接访问的寄存器，供数据移动指令和整数操作指令使用
+\par
+ALU寄存器一共有15个，$ \%r_{0} - \%r_{13} $ 为常规寄存器, 用数字0-D表示，\%rsp为堆栈寄存器，用数字E表示，数字F表示不需要寄存器
+\subsection{其他寄存器}
+\section{指令格式}
+\subsection{格式A}
+只有OP,占1字节
+\subsection{格式B}
+OP + 2 * R 占2字节
+\subsection{格式C}
+OP + 2 * R + V/D （立即数或地址）占9字节
+\subsection{格式D}
+OP + Dest （地址）占8字节
+
+
+\begin{table}
+	\begin{tabular}{lllllll}
+		\toprule
+		类型                         & 格式 & 指令   & OP & 语法            & 意义               \\ \midrule
+		停机指令                     & A    & halt   & 00 & halt            & 停机               \\ \midrule
+		空指令                       & A    & nop    & 10 & nop             & 空                 \\ \midrule
+		\multirow{4}*{数据移动指令}  & C    & irmovq & 20 & irrmovq \$x, Ra & 立即数移动到寄存器 \\
+		~                            & B    & rrmovq & 30 & rrmovq Ra,Rb    & 寄存器移动到寄存器 \\
+		~                            & C    & mrmovq & 40 & mrmovq D,Ra     & 存储器移动到寄存器 \\
+		~                            & C    & rmmovq & 50 & rmmovq Ra,D     & 寄存器移动到存储器 \\ \midrule
+		\multirow{8}*{整数操作指令}  & B    & addq   & 61 & addq Ra,Rb      & 加法操作           \\
+		~                            & B    & subq   & 62 & subq Ra,Rb      & 减法操作           \\
+		~                            & B    & mulq   & 63 & mulq Ra,Rb      & 乘法操作           \\
+		~                            & B    & divq   & 64 & divq Ra,Rb      & 除法操作           \\
+		~                            & B    & andq   & 65 & andq Ra,Rb      & 按位与             \\
+		~                            & B    & orq    & 66 & orq Ra,Rb       & 按位或             \\
+		~                            & B    & xorq   & 67 & xorq Ra,Rb      & 按位异或           \\ \midrule
+		\multirow{10}*{地址跳转指令} & D    & jmp    & 80 & jmp Dest        & 跳转               \\
+		~                            & D    & jle    & 81 & ...             &                    \\
+		~                            & D    & jle    & 82 & ...             &                    \\
+		~                            & D    & jl     & 83 & ...             &                    \\
+		~                            & D    & je     & 84 & ...             &                    \\
+		~                            & D    & jne    & 85 & ...             &                    \\
+		~                            & D    & jge    & 86 & ...             &                    \\
+		~                            & D    & jg     & 87 & ...             &                    \\
+		~                            & D    & call   & A0 & call Dest       & 函数调用           \\
+		~                            & A    & ret    & B0 & ret             & 函数返回           \\
+
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\section{数据通路图}
+
+\end{document}
