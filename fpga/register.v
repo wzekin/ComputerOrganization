@@ -14,15 +14,23 @@ module register(
        );
 
 reg [63:0] r[14:0];
+reg [63:0] v_A,v_B;
 
-assign valA = r[rA];
-assign valB = r[rB];
+assign valA = v_A;
+assign valB = v_B;
 
 always@(posedge clock)
   begin
     if (R_W == 1)
       begin
         r[rB] = dbus_in;
+      end
+    else
+      begin
+        if (rA != 8'hF)
+          v_A = r[rA];
+        if (rB != 8'hF)
+          v_B = r[rB];
       end
   end
 endmodule

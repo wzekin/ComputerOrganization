@@ -11,7 +11,6 @@ module alu(
        );
 reg [63:0] ALU_RESULT;
 
-assign dbus_out = ALU_RESULT;
 assign CF = (ALU_RESULT < A & ALU_Sel == 4'b0001) | (ALU_RESULT > A & ALU_Sel == 4'b0010);
 assign ZF = ALU_RESULT == 0;
 

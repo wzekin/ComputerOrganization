@@ -12,10 +12,14 @@ module memory(
        );
 
 parameter MEM_INIT_FILE = "program.mem";
-reg [7:0] ram[255:0];
+reg [7:0] ram[65535:0];
 reg [63:0] data;
 reg [79:0] data_;
 
+integer i;
+initial
+  for (i=0; i<65536; i=i+1)
+    ram[i] = 0;
 initial
   begin
     data = 64'h00000000;

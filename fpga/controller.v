@@ -46,11 +46,11 @@ wire t1,t2,t3;
 wire w1,w2,w3,w4,w5,w6;
 
 //寄存器
-reg [63:0] PC,valP;
-wire [63:0] valC;
+reg [63:0] PC;
+wire [63:0] valC,valP;
 
 //alu
-reg [3:0] ALU_sel;
+wire [3:0] ALU_sel;
 wire [63:0]A,B;
 wire [63:0] valE;
 wire CF,ZF;
@@ -81,12 +81,12 @@ assign regB = ((w2 & (code == OPQ | code == RMMOVQ))
        (w5 & code == MRMOVQ) ? rA : 8'hF;
 assign regA = (w2 & (code == OPQ | code == MRMOVQ | code == RRMOVQ | code == RMMOVQ )) ? rA :
        (w2 & code == RET) ? RSP : 8'hF;
-assign REG_R_W = (w5 & (code == OPQ | code == MRMOVQ | code == IRMOVQ | code == RRMOVQ));
+assign REG_R_W = (w5 & (code == OPQ | code == MRMOVQ | code == IRMOVQ | code == RRMOVQ | code == CALL | code == RET));
 assign MEM_R_W = (w4 & (code == CALL | code == RMMOVQ));
 assign code_update = w2 | w1;
 assign pc_update = w6;
-assign ALU_Sel = (code == OPQ) ? ifun :
-       (code == CALL | code == RET| code == MRMOVQ | code == RMMOVQ) ? 1 : 0;
+assign ALU_sel = (code == OPQ) ? ifun :
+       (code == CALL | code == RET| code == MRMOVQ | code == RMMOVQ) ? 4'h1 : 4'h0;
 assign A = (code == CALL) ? -8 :
        (code == RET) ? 8 :
        (code == OPQ | code == RRMOVQ) ? valA :
@@ -109,38 +109,29 @@ assign code = icode[7:4];
 assign ifun = icode[3:0];
 assign rA = icode[15:12];
 assign rB = icode[11:8];
-assign valC = icode[79:16];
+assign valC = (code == CALL | code == JXX) ? icode[71:8] : icode[79:16];
+assign valP = (code == JXX | code == CALL) ? PC + 9 :
+       (code == RET | code == NOP) ? PC + 1 :
+       (code == OPQ | code == RRMOVQ) ? PC + 2 :
+       (code == MRMOVQ | code == RMMOVQ | code == IRMOVQ) ? PC + 10 : PC;
 
 //更新数据
 always@(posedge t3)
   begin
     if (code_update == 1)
-      begin
-        case (code)
-          JXX:
-            valP <= PC + 9;
-          CALL:
-            valP <= PC + 9;
-          RET:
-            valP <= PC + 1;
-          NOP:
-            valP <= PC + 1;
-          OPQ:
-            valP <= PC + 2;
-          MRMOVQ:
-            valP <= PC + 10;
-          RRMOVQ:
-            valP <= PC + 2;
-          IRMOVQ:
-            valP <= PC + 10;
-          RMMOVQ:
-            valP <= PC + 10;
-          HALT:
-            State <= SHALT;
-          default:
-            State <= ERROR;
-        endcase
-      end
+      if (code == HALT)
+        State <= SHALT;
+      else if (code != CALL
+               & code != JXX
+               & code != RET
+               & code != NOP
+               & code != OPQ
+               & code != RRMOVQ
+               & code != MRMOVQ
+               & code != RMMOVQ
+               & code != IRMOVQ
+              )
+        State <= ERROR;
 
     if (pc_update == 1)
       begin
@@ -206,7 +197,7 @@ initial
     $dumpfile("fpga.vcd");
     $dumpvars(0,controller);
     $display("hello world!");
-    #100;
+    #1000;
     $finish;
   end
 endmodule
