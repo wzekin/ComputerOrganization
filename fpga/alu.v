@@ -7,12 +7,14 @@ module alu(
          input [3:0] ALU_Sel,
          input clock,
          output [63:0] valE,
-         output CF,ZF
+         output cf,zf,sf,of
        );
 reg [63:0] ALU_RESULT;
 
-assign CF = (ALU_RESULT < A & ALU_Sel == 4'b0001) | (ALU_RESULT > A & ALU_Sel == 4'b0010);
-assign ZF = ALU_RESULT == 0;
+assign cf = (ALU_RESULT < A & ALU_Sel == 4'b0001) | (ALU_RESULT > A & ALU_Sel == 4'b0010);
+assign zf = ALU_RESULT == 0;
+assign sf = ALU_RESULT[63];
+assign of = (A > 0 == B > 0) && (ALU_RESULT < 0 != A < 0);
 
 initial
   begin
