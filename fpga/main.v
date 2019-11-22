@@ -465,7 +465,7 @@ always@(posedge t3)
         $display("服务器停机");
         $finish;
       end
-    //$stop;
+    $stop;
     i = i+1;
   end
 endmodule

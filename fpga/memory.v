@@ -26,7 +26,7 @@ always@(posedge clock)
   begin
     if (R_W == 1)
       begin
-        $display("[Mem] 0x%h to %3d",mem_addr,val);
+        $display("[Mem] 0x%d to %3d",mem_addr,val);
         ram[mem_addr] = val[0+:8];
         //if (size >=2)
         ram[mem_addr + 1] = val[8+:8];
