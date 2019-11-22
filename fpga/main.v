@@ -399,8 +399,73 @@ initial
     clk = 0;
     $dumpfile("fpga.vcd");
     $dumpvars(0,main);
-    $display("第  0个周期");
-    #1000;
-    $finish;
+  end
+
+//打印信息
+integer i = 0;
+always@(posedge t3)
+  begin
+    $display("---------------------------------------------------");
+    $display("第%3d个周期",i);
+    $display("");
+    $display("取指阶段状态:");
+    $display("分支预测pc：0x%d",F_predPC);
+    $display("是否暂停: %d",F_stall);
+    $display("是否冒泡: %d",F_bubble);
+    $display("");
+    $display("译码阶段状态: %d", D_stat);
+    $display("指令：%d",D_icode);
+    $display("ifun：%d",D_ifun);
+    $display("rA: %d",D_rA);
+    $display("rB: %d",D_rB);
+    $display("valP: %d",D_valP);
+    $display("valC: %d",D_valC);
+    $display("是否暂停: %d",D_stall);
+    $display("是否冒泡: %d",D_bubble);
+    $display("");
+    $display("执行阶段状态: %d",E_stat);
+    $display("指令：%d",E_icode);
+    $display("ifun：%d",E_ifun);
+    //$display("srcA: %d",E_srcA);
+    //$display("srcB: %d",E_srcB);
+    $display("dstE: %d",E_dstE);
+    $display("dstM: %d",E_dstM);
+    $display("valA: %d",E_valA);
+    $display("valB: %d",E_valB);
+    $display("valC: %d",E_valC);
+    $display("cf: %d",e_cf);
+    $display("zf: %d",e_zf);
+    $display("sf: %d",e_sf);
+    $display("of: %d",e_of);
+    $display("是否暂停: %d",E_stall);
+    $display("是否冒泡: %d",E_bubble);
+    $display("");
+    $display("访存阶段状态: %d",M_stat);
+    $display("指令：%d",M_icode);
+    $display("ifun：%d",M_ifun);
+    $display("dstE: %d",M_dstE);
+    $display("dstM: %d",M_dstM);
+    $display("valA: %d",M_valA);
+    $display("valE: %d",M_valE);
+    $display("Cnd: %d",M_Cnd);
+    $display("是否暂停: %d",M_stall);
+    $display("是否冒泡: %d",M_bubble);
+    $display("");
+    $display("写回阶段状态: %d",W_stat);
+    $display("指令：%d",W_icode);
+    $display("dstE: %d",W_dstE);
+    $display("dstM: %d",W_dstM);
+    $display("valE: %d",W_valE);
+    $display("valM: %d",W_valM);
+    $display("是否暂停: %d",W_stall);
+    $display("是否冒泡: %d",W_bubble);
+    $display("");
+    if (Stat == STATE_HALT)
+      begin
+        $display("服务器停机");
+        $finish;
+      end
+    //$stop;
+    i = i+1;
   end
 endmodule

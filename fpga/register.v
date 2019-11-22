@@ -24,12 +24,12 @@ always@(posedge clock)
   begin
     if (dstM != 8'hF)
       begin
-        $display("[M]%%r%0d from %3d to %3d",dstM + 1,r[dstM],M);
+        $display("[from Mem] %%r%0d from %3d to %3d",dstM + 1,r[dstM],M);
         r[dstM] = M;
       end
     if (dstE != 8'hF)
       begin
-        $display("[E]%%r%0d from %3d to %3d",dstE + 1,r[dstE],E);
+        $display("[from Alu] %%r%0d from %3d to %3d",dstE + 1,r[dstE],E);
         r[dstE] = E;
       end
     if (srcA != 8'hF)
