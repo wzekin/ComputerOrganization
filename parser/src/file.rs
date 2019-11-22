@@ -21,7 +21,6 @@ pub fn parse_file<'a>(lines: &'a Vec<String>) -> IResult<&[u8], IFile<'a>> {
     let mut ifile = IFile::default();
     let mut pos: u64 = 0;
     for i in 0..lines.len() {
-        println!("{}", pos);
         let (_, ast) = parse(lines[i].as_bytes())?;
         match ast {
             AST::Pos(p) => pos = p,
@@ -60,7 +59,7 @@ pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
     let mut pos: u64 = 0;
     let mut file = File::create(filename)?;
     for (p, val) in ifile.complies.iter() {
-        if pos < p.clone() {
+        while pos < p.clone() {
             write!(file, "00000000\n")?;
             pos += 1;
         }
@@ -69,7 +68,7 @@ pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
                 write!(file, "{:08b}\n", val.iorder as u8)?;
                 pos += 1
             }
-            CALL | JMP | JLE | JL | JE | JNE | JGE | JG => {
+            CALL | JMP | JLE | JL | JE | JNE | JGE | JG | JS | JNS | JA | JAE | JB | JBE => {
                 write!(file, "{:08b}\n", val.iorder as u8)?;
                 for byte in val.val_c.to_le_bytes().iter() {
                     write!(file, "{:08b}\n", byte)?;
@@ -88,6 +87,12 @@ pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
                     write!(file, "{:08b}\n", byte)?;
                 }
                 pos += 10
+            }
+            CONST => {
+                for byte in val.val_c.to_le_bytes().iter() {
+                    write!(file, "{:08b}\n", byte)?;
+                }
+                pos += 8
             }
         }
         write!(file, "\n")?;

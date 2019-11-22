@@ -3,7 +3,7 @@ use nom::bytes::complete::{tag, take_until};
 use nom::character::complete::{digit0, space0};
 use nom::character::is_alphabetic;
 use nom::sequence::tuple;
-use nom::{named, tag, take_while, IResult};
+use nom::{dbg_dmp, named, tag, take_while, IResult};
 use std::collections::BTreeMap;
 use std::convert::TryInto;
 
@@ -18,10 +18,10 @@ pub enum AST<'a> {
 pub enum IOrder {
     HALT = 0x0,
     NOP = 0x10,
-    IRMOVQ = 0x20,
-    RRMOVQ = 0x30,
-    MRMOVQ = 0x40,
-    RMMOVQ = 0x50,
+    IRMOVQ = 0x28,
+    RRMOVQ = 0x38,
+    MRMOVQ = 0x48,
+    RMMOVQ = 0x58,
     ADDQ = 0x61,
     SUBQ = 0x62,
     MULQ = 0x63,
@@ -29,15 +29,22 @@ pub enum IOrder {
     ANDQ = 0x65,
     ORQ = 0x66,
     XORQ = 0x67,
-    JMP = 0x80,
-    JLE = 0x81,
-    JL = 0x83,
-    JE = 0x84,
-    JNE = 0x85,
-    JGE = 0x86,
-    JG = 0x87,
+    JMP = 0x70,
+    JE = 0x71,
+    JNE = 0x72,
+    JS = 0x73,
+    JNS = 0x74,
+    JG = 0x75,
+    JGE = 0x76,
+    JL = 0x77,
+    JLE = 0x78,
+    JA = 0x79,
+    JAE = 0x7A,
+    JB = 0x7B,
+    JBE = 0x7C,
     CALL = 0xA0,
     RET = 0xB0,
+    CONST = 0xFF,
 }
 
 impl Default for IOrder {
@@ -136,12 +143,18 @@ fn parse_jxx_call(input: &[u8]) -> IResult<&[u8], AST> {
     let (input, (method, _, symbol)) = tuple((method, space0, method))(input)?;
     let iorder = match method {
         b"JMP" | b"jmp" => IOrder::JMP,
-        b"JLE" | b"jle" => IOrder::JLE,
-        b"JL" | b"jl" => IOrder::JL,
         b"JE" | b"je" => IOrder::JE,
         b"JNE" | b"jne" => IOrder::JNE,
-        b"JGE" | b"jge" => IOrder::JGE,
+        b"JS" | b"js" => IOrder::JS,
+        b"JNS" | b"jns" => IOrder::JNS,
         b"JG" | b"jg" => IOrder::JG,
+        b"JGE" | b"jge" => IOrder::JGE,
+        b"JL" | b"jl" => IOrder::JL,
+        b"JLE" | b"jle" => IOrder::JLE,
+        b"JA" | b"ja" => IOrder::JA,
+        b"JAE" | b"jae" => IOrder::JAE,
+        b"JB" | b"jb" => IOrder::JB,
+        b"JBE" | b"jbe" => IOrder::JBE,
         b"CALL" | b"call" => IOrder::CALL,
         _ => return Err(nom::Err::Error((input, nom::error::ErrorKind::Tag))),
     };
@@ -215,6 +228,21 @@ fn parse_irmovq(input: &[u8]) -> IResult<&[u8], AST> {
     ));
 }
 
+fn parse_irmovq_symbol(input: &[u8]) -> IResult<&[u8], AST> {
+    let (input, (_, _, symbol, _, r_b)) =
+        tuple((tag("irmovq"), space0, method, tag(","), parse_reg))(input)?;
+    return Ok((
+        input,
+        AST::Order(IComplie {
+            iorder: IOrder::IRMOVQ,
+            symbol: Some(symbol),
+            r_b,
+            len: 10,
+            ..IComplie::default()
+        }),
+    ));
+}
+
 fn parse_mrmovq(input: &[u8]) -> IResult<&[u8], AST> {
     let (input, (_, _, (val_c, r_b), _, r_a)) =
         tuple((method, space0, parse_val_and_reg, tag(","), parse_reg))(input)?;
@@ -250,6 +278,7 @@ fn parse_rmmovq(input: &[u8]) -> IResult<&[u8], AST> {
 fn parse_order(input: &[u8]) -> IResult<&[u8], AST> {
     return alt((
         parse_irmovq,
+        parse_irmovq_symbol,
         parse_opq_rrmovq,
         parse_rmmovq,
         parse_mrmovq,
@@ -268,13 +297,34 @@ fn parse_point(input: &[u8]) -> IResult<&[u8], AST> {
     return Ok((input, AST::Pos(val)));
 }
 
+fn parse_quad(input: &[u8]) -> IResult<&[u8], AST> {
+    let (input, (_, _, val_c)) = tuple((tag(".quad"), space0, digit0))(input)?;
+    let val_c = std::str::from_utf8(val_c)
+        .unwrap()
+        .parse::<u64>()
+        .ok()
+        .unwrap();
+    return Ok((
+        input,
+        AST::Order(IComplie {
+            iorder: IOrder::CONST,
+            val_c,
+            len: 8,
+            ..IComplie::default()
+        }),
+    ));
+}
+
 fn parse_symbol(input: &[u8]) -> IResult<&[u8], AST> {
     let (input, symbol) = take_until(":")(input)?;
     return Ok((input, AST::Symbol(symbol)));
 }
 
 pub fn parse(input: &[u8]) -> IResult<&[u8], AST> {
-    let (input, (_, ast)) = tuple((space0, alt((parse_point, parse_symbol, parse_order))))(input)?;
+    let (input, (_, ast)) = tuple((
+        space0,
+        alt((parse_point, parse_quad, parse_symbol, parse_order)),
+    ))(input)?;
     return Ok((input, ast));
 }
 
