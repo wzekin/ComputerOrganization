@@ -1,5 +1,5 @@
 build: *.v
-	iverilog *.v -o build -g2012
+	iverilog *.v -o build
 
 run: build program.mem
 	./build
