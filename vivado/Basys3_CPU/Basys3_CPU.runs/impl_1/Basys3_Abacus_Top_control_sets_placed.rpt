@@ -1,0 +1,631 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Sun Dec 15 18:09:40 2019
+| Host         : zekin-pc running 64-bit Manjaro Linux
+| Command      : report_control_sets -verbose -file Basys3_Abacus_Top_control_sets_placed.rpt
+| Design       : Basys3_Abacus_Top
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   553 |
+|    Minimum number of control sets                        |   553 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   553 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |   514 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    29 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              51 |           31 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              60 |           23 |
+| Yes          | No                    | No                     |             332 |           81 |
+| Yes          | No                    | Yes                    |            4099 |         1490 |
+| Yes          | Yes                   | No                     |             464 |          205 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+--------------------------------------------+---------------------------------+------------------+----------------+
+|     Clock Signal    |                Enable Signal               |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------+--------------------------------------------+---------------------------------+------------------+----------------+
+|  clk50              | counter/cnt[2]_i_1_n_0                     | btnC_IBUF                       |                1 |              3 |
+| ~uut/db_clk/O_reg_0 | uut/cnt                                    | uut/cnt[3]_i_1_n_0              |                1 |              4 |
+|  counter/t2_BUFG    | cpu_unit/M_valA[15]_i_2_n_0                | cpu_unit/E_dstM[3]_i_1_n_0      |                1 |              4 |
+|  counter/t2_BUFG    | cpu_unit/set_cc                            |                                 |                3 |              4 |
+|  clk_IBUF_BUFG      |                                            |                                 |                4 |              4 |
+|  clk_IBUF_BUFG      | get_tx/ready                               |                                 |                2 |              4 |
+|  clk_IBUF_BUFG      | get_tx/count                               | get_tx/p_0_in                   |                1 |              4 |
+|  counter/t1_BUFG    | uut/db_data/count[4]_i_2__0_n_0            | uut/db_data/count[4]_i_1__0_n_0 |                1 |              5 |
+|  counter/t3_BUFG    | mem_unit/ram[430][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[440][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[382][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[424][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[423][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[383][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[432][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[431][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[481][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[474][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[433][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[475][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[476][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[434][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[435][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[47][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[349][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[341][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[426][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[348][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[347][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[346][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[345][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[344][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[343][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[342][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[40][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[340][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[409][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[401][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[403][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[421][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[402][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[405][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[458][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[399][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[384][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[394][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[393][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[400][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[395][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[422][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[415][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[398][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[482][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[412][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[411][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[413][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[414][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[425][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[39][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[378][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[416][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[436][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[41][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[419][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[381][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[380][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[37][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[379][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[410][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[377][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[376][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[408][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[407][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[406][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[396][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[397][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[31][7]_i_1_n_0                | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[312][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[313][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[314][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[321][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[322][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[323][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[315][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[320][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[316][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[319][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[324][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[325][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[326][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[327][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[328][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[389][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[332][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[387][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[339][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[335][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[334][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[333][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[338][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[337][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[385][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[38][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[336][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[331][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[330][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[32][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[329][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[318][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[317][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[355][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[361][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[360][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[35][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[359][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[358][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[404][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[357][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[356][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[362][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[354][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[353][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[352][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[391][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[351][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[392][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[350][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[34][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[363][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[364][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[365][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[366][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[367][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[368][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[369][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[36][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[370][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[371][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[372][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[373][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[374][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[375][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[390][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[510][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[50][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[489][7]_i_1_n_0               | btnL_IBUF                       |                7 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[488][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[487][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[58][7]_i_1_n_0                | btnL_IBUF                       |                7 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[57][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[56][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[55][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[509][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[503][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[504][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[73][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[505][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[506][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[59][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[5][7]_i_1_n_0                 | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[500][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[492][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[502][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[493][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[494][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[495][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[496][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[501][7]_i_1_n_0               | btnL_IBUF                       |                7 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[497][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[74][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[4][7]_i_1_n_0                 | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[49][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[499][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[498][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[65][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[507][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[508][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[91][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[86][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[87][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[88][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[89][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[8][7]_i_1_n_0                 | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[90][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[96][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[98][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[69][7]_i_1_n_0                | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[97][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[92][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[93][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[94][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[95][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[99][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[9][7]_i_1_n_0                 | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[61][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[54][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[53][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[52][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[51][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[6][7]_i_1_n_0                 | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[64][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[63][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[62][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[491][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[60][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[72][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[70][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[68][7]_i_1_n_0                | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[71][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[67][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[66][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[447][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[429][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[428][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[427][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[456][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[450][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[44][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[449][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[448][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[42][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[446][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[445][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[444][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[443][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[467][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[466][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[470][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[442][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[468][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[457][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[471][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[452][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[469][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[418][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[417][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[453][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[465][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[454][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[451][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[472][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[441][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[459][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[45][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[479][7]_i_1_n_0               | btnL_IBUF                       |                7 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[83][7]_i_1_n_0                | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[77][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[483][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[486][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[484][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[485][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[78][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[85][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[84][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[75][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[82][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[81][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[80][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[7][7]_i_1_n_0                 | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[79][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[48][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[490][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[455][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[480][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[76][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[477][7]_i_1_n_0               | btnL_IBUF                       |                7 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[478][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[437][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[439][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[43][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[438][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[46][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[460][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[461][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[462][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[463][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[464][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[473][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[161][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[173][7]_i_1_n_0               | btnL_IBUF                       |                8 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[174][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[175][7]_i_1_n_0               | btnL_IBUF                       |                8 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[159][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[15][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[160][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[170][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[183][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[182][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[168][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[186][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[169][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[16][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[165][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[184][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[154][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[162][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[163][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[167][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[166][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[164][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[185][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[181][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[180][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[17][7]_i_1_n_0                | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[141][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[179][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[178][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[187][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[129][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[140][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[210][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[204][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[203][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[202][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[201][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[145][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[149][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[142][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[143][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[144][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[137][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[138][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[13][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[139][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[128][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[150][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[14][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[148][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[147][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[156][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[146][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[158][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[157][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[172][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[171][7]_i_1_n_0               | btnL_IBUF                       |                8 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[155][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[151][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[152][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[153][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[10][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[120][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[11][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[200][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[1][7]_i_1_n_0                 | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[119][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[118][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[199][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[102][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[103][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[104][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[105][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[106][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[107][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[108][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[109][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[121][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[110][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[111][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[19][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[112][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[113][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[101][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[115][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[114][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[100][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[0][7]_i_1_n_0                 | btnL_IBUF                       |                8 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram                               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[117][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[116][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  clk_IBUF_BUFG      | get_tx/shift[7]_i_1_n_0                    |                                 |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[192][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[124][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[12][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[177][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[127][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[126][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[125][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[176][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[130][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[131][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[188][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[189][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[18][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[190][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[191][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[388][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[193][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[194][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[195][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[196][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[20][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[197][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[198][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[136][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[135][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[134][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[133][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[132][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[123][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[122][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[25][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[289][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[285][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[286][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[287][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[273][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[272][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[268][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[269][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[26][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[270][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[261][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[262][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[257][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[258][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[260][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[28][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[259][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[277][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[263][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[264][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[265][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[278][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[279][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[266][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[267][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[27][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[280][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[281][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[282][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[283][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[300][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[3][7]_i_1_n_0                 | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[309][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[420][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[33][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[311][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[386][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[310][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[30][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[308][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[303][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[304][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[305][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[302][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[301][7]_i_1_n_0               | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[206][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[2][7]_i_1_n_0                 | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[29][7]_i_1_n_0                | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[307][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[299][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[306][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[298][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[297][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[296][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[295][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[294][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[293][7]_i_1_n_0               | btnL_IBUF                       |                6 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[292][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[291][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[290][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[220][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[244][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[232][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[22][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[230][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[231][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[228][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[227][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[229][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[226][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[223][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[222][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[221][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[225][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[224][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[271][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[21][7]_i_1_n_0                | btnL_IBUF                       |                5 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[219][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[218][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[217][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[216][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[215][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[214][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[213][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[212][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[207][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[208][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[211][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[209][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[205][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[233][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[284][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[236][7]_i_1_n_0               | btnL_IBUF                       |                4 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[274][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[275][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[256][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[255][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[276][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[288][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[254][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[253][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[252][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[251][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[250][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[24][7]_i_1_n_0                | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[249][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[246][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[234][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[235][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[237][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[245][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[238][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[239][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[23][7]_i_1_n_0                | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[243][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[240][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[241][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[242][7]_i_1_n_0               | btnL_IBUF                       |                1 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[248][7]_i_1_n_0               | btnL_IBUF                       |                2 |              8 |
+|  counter/t3_BUFG    | mem_unit/ram[247][7]_i_1_n_0               | btnL_IBUF                       |                3 |              8 |
+| ~uut/db_clk/O_reg_0 |                                            |                                 |                3 |              9 |
+|  counter/t1_BUFG    |                                            |                                 |                6 |             11 |
+|  counter/t2_BUFG    |                                            |                                 |                8 |             11 |
+|  clk_IBUF_BUFG      |                                            | get_tx/p_0_in                   |                4 |             16 |
+|  counter/t1_BUFG    | uut/keycode[15]_i_1_n_0                    |                                 |                3 |             16 |
+|  counter/t2_BUFG    | start0                                     |                                 |                4 |             16 |
+|  counter/t2_BUFG    | cpu_unit/F_predPC[15]_i_1_n_0              |                                 |                9 |             16 |
+|  counter/t2_BUFG    | cpu_unit/interupt_state0                   | btnL_IBUF                       |                6 |             16 |
+|  counter/t3_BUFG    |                                            |                                 |               10 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[11][15]_i_1_n_0        | btnL_IBUF                       |                5 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[13][15]_i_1_n_0        | btnL_IBUF                       |                6 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[5][15]_i_1_n_0         | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[3][15]_i_1_n_0         | btnL_IBUF                       |                6 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[12][15]_i_1_n_0        | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[7][15]_i_1_n_0         | btnL_IBUF                       |                8 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[6][15]_i_1_n_0         | btnL_IBUF                       |                6 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[4][15]_i_1_n_0         | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[0][15]_i_1_n_0         | btnL_IBUF                       |                5 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[14][15]_i_1_n_0        | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/v_B[15]_i_1_n_0          | btnL_IBUF                       |                8 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/v_A[15]_i_1_n_0          | btnL_IBUF                       |                9 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[2][15]_i_1_n_0         | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[8][15]_i_1_n_0         | btnL_IBUF                       |               11 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[9][15]_i_1_n_0         | btnL_IBUF                       |                7 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[1][15]_i_1_n_0         | btnL_IBUF                       |                5 |             16 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r[10][15]_i_1_n_0        | btnL_IBUF                       |                4 |             16 |
+|  clk_IBUF_BUFG      | tx_con/pbuf                                |                                 |                9 |             28 |
+|  counter/t2_BUFG    |                                            | cpu_unit/W_dstE[3]_i_1_n_0      |               19 |             44 |
+|  counter/t2_BUFG    | cpu_unit/D_stat0                           | cpu_unit/D_stat1                |               20 |             48 |
+|  counter/t2_BUFG    | cpu_unit/M_valA[15]_i_2_n_0                | cpu_unit/M_valA[15]_i_1_n_0     |               25 |             48 |
+|  counter/t2_BUFG    | cpu_unit/M_valA[15]_i_2_n_0                | cpu_unit/E_stat[2]_i_1_n_0      |               35 |             63 |
+|  counter/t3_BUFG    | cpu_unit/reg_unit/r_backup[14][15]_i_1_n_0 |                                 |               49 |            240 |
++---------------------+--------------------------------------------+---------------------------------+------------------+----------------+
+
+

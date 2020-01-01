@@ -1,38 +1,42 @@
-  .pos 0
+.pos 0
   irmovq Stack,%rsp
+  out %rsp
   call main
   halt
 main:
-  irmovq Char,%r1
-  irmovq $680,%r2
-  irmovq $8,%r3
-  irmovq $1,%r4
-  irmovq $5,%r5
-  orq %r5,%r5
-  jmp test
-loop:
-  mrmovq 0(%r1),%r6
-  mrmovq 0(%r2),%r7
-  rmmovq %r6,0(%r2)
-  rmmovq %r7,0(%r1)
-  addq %r3,%r1
-  subq %r3,%r2
-  subq %r4,%r5
-test:
-  jne loop
+  irmovq $1,%r1
+  irmovq $1,%r2
+loopa:
+  addq %r2,%r1
+  jmp loopa
   ret
-  .pos 400
+.pos 200
 Stack:
-  .pos 600
-Char:
-  .quad 104
-  .quad 101
-  .quad 108
-  .quad 108
-  .quad 111
-  .quad 32
-  .quad 119
-  .quad 111
-  .quad 114
-  .quad 108
-  .quad 100
+.pos 300
+interupt:
+  irmovq $400,%r1
+  mrmovq 0(%r1),%r2
+  irmovq $0,%r5
+  subq %r5,%r2
+  irmovq $2,%r5
+  jmp testb
+loopb:
+  mrmovq 400(%r2),%r6
+  subq %r5,%r2
+  out %r6
+testb:
+  jne loopb
+  iret
+.pos 350
+interupt1:
+  irmovq $400,%r1
+  irmovq $1024,%r5
+  mrmovq 0(%r1),%r2
+  mrmovq 0(%r5),%r4
+  irmovq $2,%r3
+  addq %r3,%r2
+  rmmovq %r2,0(%r1)
+  addq %r2,%r1
+  rmmovq %r4,0(%r1)
+  out %r4
+  iret

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"cpu_sim_time_impl.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/counter.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/memory.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/alu.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/pipe_controller.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/register.v" \
+"../../../../../Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v" \
+"../../../../../Basys3_CPU.srcs/sim_1/imports/new/cpu_sim.v" \
+
+# Do not sort compile order
+nosort

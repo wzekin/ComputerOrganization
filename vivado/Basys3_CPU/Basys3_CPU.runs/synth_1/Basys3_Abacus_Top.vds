@@ -1,0 +1,395 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec 15 18:06:48 2019
+# Process ID: 7807
+# Current directory: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1
+# Command line: vivado -log Basys3_Abacus_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3_Abacus_Top.tcl
+# Log file: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/Basys3_Abacus_Top.vds
+# Journal file: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Basys3_Abacus_Top.tcl -notrace
+Command: synth_design -top Basys3_Abacus_Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7868 
+WARNING: [Synth 8-6901] identifier 'NBYTES' is used before its declaration [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v:24]
+WARNING: [Synth 8-6901] identifier 'NBYTES' is used before its declaration [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1806.195 ; gain = 204.688 ; free physical = 1036 ; free virtual = 5560
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Basys3_Abacus_Top' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:36]
+INFO: [Synth 8-6157] synthesizing module 'cpu' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/cpu_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (1#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/cpu_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'memory' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/memory_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (2#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/memory_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/counter_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (3#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/counter_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PS2Receiver' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/PS2Receiver_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'PS2Receiver' (4#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/PS2Receiver_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bin2ascii' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v:23]
+	Parameter NBYTES bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin2ascii' (5#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_buf_con' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/uart_buf_con_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'uart_buf_con' (6#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/uart_buf_con_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/uart_tx_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (7#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/.Xil/Vivado-7807-zekin-pc/realtime/uart_tx_stub.v:5]
+WARNING: [Synth 8-567] referenced signal 'keycodev' should be on the sensitivity list [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:161]
+WARNING: [Synth 8-3848] Net seg in module/entity Basys3_Abacus_Top does not have driver. [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:57]
+WARNING: [Synth 8-3848] Net an in module/entity Basys3_Abacus_Top does not have driver. [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:58]
+WARNING: [Synth 8-3848] Net dp in module/entity Basys3_Abacus_Top does not have driver. [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'Basys3_Abacus_Top' (8#1) [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:36]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[0]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[0]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port dp
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port btnU
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1844.070 ; gain = 242.562 ; free physical = 1072 ; free virtual = 5595
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1858.914 ; gain = 257.406 ; free physical = 1067 ; free virtual = 5591
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1858.914 ; gain = 257.406 ; free physical = 1067 ; free virtual = 5591
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1858.914 ; gain = 0.000 ; free physical = 1061 ; free virtual = 5584
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/cpu/cpu_in_context.xdc] for cell 'cpu_unit'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/cpu/cpu_in_context.xdc] for cell 'cpu_unit'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/memory_synth_1/memory/memory_in_context.xdc] for cell 'mem_unit'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/memory_synth_1/memory/memory_in_context.xdc] for cell 'mem_unit'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/counter_synth_1/counter/counter_in_context.xdc] for cell 'counter'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/counter_synth_1/counter/counter_in_context.xdc] for cell 'counter'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/PS2Receiver_synth_1/PS2Receiver/PS2Receiver_in_context.xdc] for cell 'uut'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/PS2Receiver_synth_1/PS2Receiver/PS2Receiver_in_context.xdc] for cell 'uut'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/uart_tx_synth_1/uart_tx/uart_tx_in_context.xdc] for cell 'get_tx'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/uart_tx_synth_1/uart_tx/uart_tx_in_context.xdc] for cell 'get_tx'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/uart_buf_con_synth_1/uart_buf_con/uart_buf_con_in_context.xdc] for cell 'tx_con'
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/uart_buf_con_synth_1/uart_buf_con/uart_buf_con_in_context.xdc] for cell 'tx_con'
+Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/constrs_1/imports/constraints/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_Abacus_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_Abacus_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2009.664 ; gain = 0.000 ; free physical = 969 ; free virtual = 5502
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2009.664 ; gain = 0.000 ; free physical = 969 ; free virtual = 5502
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 1019 ; free virtual = 5553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 1019 ; free virtual = 5553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 1031 ; free virtual = 5554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 1027 ; free virtual = 5551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3_Abacus_Top 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module bin2ascii 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[6]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[5]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[4]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port seg[0]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port an[0]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port dp
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port btnU
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[15]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design Basys3_Abacus_Top has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 1021 ; free virtual = 5548
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 894 ; free virtual = 5425
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 894 ; free virtual = 5424
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 892 ; free virtual = 5422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpu           |         1|
+|2     |memory        |         1|
+|3     |counter       |         1|
+|4     |PS2Receiver   |         1|
+|5     |uart_buf_con  |         1|
+|6     |uart_tx       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |PS2Receiver  |     1|
+|2     |counter      |     1|
+|3     |cpu          |     1|
+|4     |memory       |     1|
+|5     |uart_buf_con |     1|
+|6     |uart_tx      |     1|
+|7     |BUFG         |     1|
+|8     |LUT1         |     2|
+|9     |LUT2         |     1|
+|10    |LUT3         |    12|
+|11    |LUT4         |    19|
+|12    |LUT5         |    12|
+|13    |LUT6         |    11|
+|14    |FDRE         |    20|
+|15    |IBUF         |     7|
+|16    |OBUF         |    17|
+|17    |OBUFT        |    12|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   247|
+|2     |  conv   |bin2ascii |    16|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 898 ; free virtual = 5429
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2009.664 ; gain = 257.406 ; free physical = 947 ; free virtual = 5478
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2009.664 ; gain = 408.156 ; free physical = 947 ; free virtual = 5478
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2009.664 ; gain = 0.000 ; free physical = 1014 ; free virtual = 5545
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.602 ; gain = 0.000 ; free physical = 970 ; free virtual = 5501
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 2015.602 ; gain = 536.500 ; free physical = 1101 ; free virtual = 5632
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2015.602 ; gain = 0.000 ; free physical = 1101 ; free virtual = 5632
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/Basys3_Abacus_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_Abacus_Top_utilization_synth.rpt -pb Basys3_Abacus_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 18:07:51 2019...

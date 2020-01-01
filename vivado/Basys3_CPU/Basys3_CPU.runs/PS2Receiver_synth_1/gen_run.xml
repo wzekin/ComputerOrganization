@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="PS2Receiver_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1576403796">
+  <File Type="VDS-TIMING-PB" Name="PS2Receiver_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PS2Receiver_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="PS2Receiver.dcp"/>
+  <File Type="REPORTS-TCL" Name="PS2Receiver_reports.tcl"/>
+  <File Type="PA-TCL" Name="PS2Receiver.tcl"/>
+  <File Type="RDS-RDS" Name="PS2Receiver.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="PS2Receiver_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="PS2Receiver_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PS2Receiver_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PS2Receiver">
+    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/PS2Receiver/new/PS2Receiver_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PS2Receiver"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PS2Receiver">
+    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/PS2Receiver/new/PS2Receiver_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PS2Receiver"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/hdl/PS2Receiver.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

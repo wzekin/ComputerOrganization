@@ -1,0 +1,2867 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 17981
+License: Customer
+
+Current time: 	Thu Dec 12 13:17:13 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Manjaro Linux
+OS Version: 5.3.15-1-MANJARO
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 67 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zekin
+User home directory: /home/zekin
+User working directory: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/zekin/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/zekin/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/zekin/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/vivado.log
+Vivado journal file location: 	/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-17981-zekin-pc
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	207 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 887 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 52 MB. Current time: 12/12/19, 1:17:15 PM CST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.xpr", 0); // r (O, cr)
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+77924kb) [00:00:35]
+// [Engine Memory]: 922 MB (+815634kb) [00:00:36]
+// [GUI Memory]: 93 MB (+12730kb) [00:00:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  5604 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 967 MB. GUI used memory: 56 MB. Current time: 12/12/19, 1:17:37 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:08 . Memory (MB): peak = 6493.875 ; gain = 71.699 ; free physical = 146 ; free virtual = 7239 
+// Project name: Basys3_CPU; location: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU; part: xc7a35tcpg236-1
+// [Engine Memory]: 988 MB (+20914kb) [00:00:41]
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bB (cr)
+// [Engine Memory]: 1,042 MB (+4104kb) [00:00:42]
+// a (cr): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_STALE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Critical Messages"); // a (cr)
+// [GUI Memory]: 106 MB (+8775kb) [00:00:47]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (F, cr)
+// PAPropertyPanels.initPanels (alu.v) elapsed time: 0.3s
+// [Engine Memory]: 1,110 MB (+17420kb) [00:00:51]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu.v]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, counter.v]", 3, false, false, true, false, false, false); // B (F, cr) - Control Key
+// [GUI Memory]: 115 MB (+3752kb) [00:00:52]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, memory.v]", 5, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, cpu.v]", 4, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, memory.v]", 5, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, pipe_controller.v]", 6, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, memory.v]", 5, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, register.v]", 7, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, memory.v]", 5, false, false, true, false, true, false); // B (F, cr) - Control Key - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (E, c)
+setFolderChooser("/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 8); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,083 MB. GUI used memory: 59 MB. Current time: 12/12/19, 1:18:10 PM CST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, counter.v]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+String[] filenames31467 = {"/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/PS2Receiver.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/alu.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/counter.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/debouncer.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/memory.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/pipe_controller.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c (cr)
+// [GUI Memory]: 124 MB (+3562kb) [00:01:31]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 9); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 9); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu.v]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu.v]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu.v]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, cpu.v]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu.v]", 2, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, counter.v]", 3, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, memory.v]", 5, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, pipe_controller.v]", 6, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, register.v]", 7, false, false, true, false, false, false); // B (F, cr) - Control Key
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, pipe_controller.v]", 6, false, false, true, false, true, false); // B (F, cr) - Control Key - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ai (ao, cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cr)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/cpu/cpu.srcs/sources_1/new/cpu.v] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/alu/alu.srcs/sources_1/new/alu.v] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/counter/counter.srcs/sources_1/new/counter.v] -no_script -reset -force -quiet 
+// aE (cr): Remove Sources: addNotify
+// bB (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/memory/memory.srcs/sources_1/new/memory.v] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/pipe_controller/pipe_controller.srcs/sources_1/new/pipe_controller.v] -no_script -reset -force -quiet 
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/register/register.srcs/sources_1/new/register.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Remove Sources"); // bB (aE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), uut : PS2Receiver (PS2Receiver.v)]", 12); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), uut : PS2Receiver (PS2Receiver.v)]", 5); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // B (F, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Thu Dec 12 13:18:54 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 231 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 52, 118); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 52, 118, false, false, false, false, true); // dT (af, cr) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 45, 107); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 45, 107, false, false, false, false, true); // dT (af, cr) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 293, 96); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 293, 96, false, false, false, false, true); // dT (af, cr) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Dec 12 13:23:47 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "139 warnings"); // h (Q, cr)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: RUN_STATUS_CHANGE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element r_backup_reg[14] was removed.  [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v:46]. ]", 2); // ah (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,120 MB. GUI used memory: 62 MB. Current time: 12/12/19, 1:23:55 PM CST
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6014] Unused sequential element r_backup_reg[14] was removed.  [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v:46]. ]", 2); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net seg in module/entity Basys3_Abacus_Top does not have driver. [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:57]. ]", 3); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net seg in module/entity Basys3_Abacus_Top does not have driver. [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/Basys3_Abacus_Top.v:57]. ]", 3); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design memory has unconnected port pc[15]. ]", 4); // ah (O, cr)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design memory has unconnected port pc[15]. ]", 4); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design memory has unconnected port pc[15]. ]", 4); // ah (O, cr)
+// [Engine Memory]: 1,282 MB (+121079kb) [00:07:20]
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/vivado/alu/alu.srcs/sources_1/new/alu.v'.. ]", 2); // ah (O, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 61 MB. Current time: 12/12/19, 1:24:25 PM CST
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // E (f, cr)
+// TclEventType: RUN_STEP_COMPLETED
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL (aI, cr)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL (aI, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 11399 ; 4450 ; 0.0 ; 0 ; 1 ; Thu Dec 12 13:18:56 CST 2019 ; 00:04:39 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a35tcpg236-1 ; zekin-pc ; Vivado Synthesis Defaults", 0, (String) null, 10, true); // az (O, cr) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.7s
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 402ms to process. Increasing delay to 3000 ms.
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 148 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+dismissDialog("Implementation Completed"); // aj (cr)
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 13:27:04 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 89 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1829 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+// Elapsed time: 35 seconds
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-13:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2840 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739598A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,368 MB (+1071900kb) [00:12:21]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,256 MB. GUI used memory: 74 MB. Current time: 12/12/19, 1:29:20 PM CST
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 25 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 76, 374); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 76, 374, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 158, 403); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 158, 403, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 139, 422); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 135, 430); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 439); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 439, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 125, 429); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 157, 426); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 149, 397); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 146, 420); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 117, 418); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 430); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 416); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 136, 424); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 136, 417); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 138, 422); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 135, 413); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 139, 421); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 132, 410); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 137, 417); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 138, 432); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 128, 423); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 128, 417); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 139, 434); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 423); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 416); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 141, 401); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 124, 415); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 108, 432); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 114, 428); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 51, 246); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 51, 246, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 157, 385); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 84, 325); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 84, 325, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 57, 462); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 64, 467); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 69, 472); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 130 MB (+44kb) [00:16:00]
+// Elapsed time: 14 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 213, 478); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 239, 432); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Run Synthesis"); // A (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cw' command handler elapsed time: 6 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 13:33:49 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 13:33:49 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 241 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 139 MB (+2628kb) [00:24:26]
+// Elapsed time: 213 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+// TclEventType: RUN_STEP_COMPLETED
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET, "Set as Out-of-Context for Synthesis..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET
+// t (cr): Set as Out-of-Context for Synthesis: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (t)
+// 'O' command handler elapsed time: 14 seconds
+dismissDialog("Set as Out-of-Context for Synthesis"); // t (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 78, 294); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 184, 311); // ch (w, cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 239, 479); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 103, 332); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 119, 376); // ch (w, cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 123, 420); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 123, 420, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 230, 435); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 230, 435, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 234, 426); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 234, 426, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 309, 428); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 309, 428, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 224, 440); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 223, 427); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 223, 427, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 141, 423); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 141, 423, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 428); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 428, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 189, 431); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 429); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 429, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 402); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+dismissDialog("Program Device"); // bC (cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [GUI Memory]: 146 MB (+133kb) [00:27:03]
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 49 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 39 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (ds, cr)
+selectMenuItem((HResource) null, "xc7a35t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 15 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 298, 162); // ch (w, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1294 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET, "Set as Out-of-Context for Synthesis..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET
+// t (cr): Set as Out-of-Context for Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (t)
+// TclEventType: FILE_SET_NEW
+dismissDialog("Set as Out-of-Context for Synthesis"); // t (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// Tcl Message: create_fileset -blockset -define_from cpu cpu 
+// Tcl Message: INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/alu.v' from fileset 'sources_1' to fileset 'cpu'. INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/pipe_controller.v' from fileset 'sources_1' to fileset 'cpu'. INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v' from fileset 'sources_1' to fileset 'cpu'. INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v' from fileset 'sources_1' to fileset 'cpu'. 
+// TclEventType: RUN_ADD
+// bB (cr):  Set As Out-of-context Module : addNotify
+// Tcl Message: file mkdir /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new 
+// Tcl Message: close [ open /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.; ; # Add in a clock definition for each input clock to the out-of-context module.; # The module will be synthesized as top so reference the clock origin using get_ports.; # You will need to define a clock on each input clock port, no top level clock information; # is provided to the module when set as out-of-context.; # Here is an example:; # create_clock -name clk_200 -period 5 [get_ports clk]; }'
+// Tcl Message: add_files -fileset cpu /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc 
+// Tcl Message: set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] } 
+// Tcl Command: 'set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc"'
+// Tcl Message: # (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] 
+// Tcl Command: 'set fileId [open $filename "w"]'
+// Tcl Message: set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc" 
+// Tcl Message: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc 
+// Tcl Command: 'puts -nonewline $fileId $data'
+// Tcl Message: set fileId [open $filename "w"] 
+// Tcl Message: file189 
+// Tcl Command: 'close $fileId'
+// Tcl Message: puts -nonewline $fileId $data 
+// Tcl Message: close $fileId 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property USED_IN {out_of_context synthesis implementation}  [get_files  /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/cpu/new/cpu_ooc.xdc] 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Set As Out-of-context Module"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 158, 393); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET, "Set as Out-of-Context for Synthesis..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET
+// t (cr): Set as Out-of-Context for Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (t)
+// TclEventType: FILE_SET_NEW
+dismissDialog("Set as Out-of-Context for Synthesis"); // t (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// bB (cr):  Set As Out-of-context Module : addNotify
+// Tcl Message: create_fileset -blockset -define_from memory memory 
+// Tcl Message: INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/memory.v' from fileset 'sources_1' to fileset 'memory'. 
+// Tcl Message: file mkdir /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new 
+// Tcl Message: close [ open /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.; ; # Add in a clock definition for each input clock to the out-of-context module.; # The module will be synthesized as top so reference the clock origin using get_ports.; # You will need to define a clock on each input clock port, no top level clock information; # is provided to the module when set as out-of-context.; # Here is an example:; # create_clock -name clk_200 -period 5 [get_ports clk]; }'
+// Tcl Message: add_files -fileset memory /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc 
+// Tcl Command: 'set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc"'
+// Tcl Message: set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] } 
+// Tcl Message: # (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] 
+// Tcl Command: 'set fileId [open $filename "w"]'
+// Tcl Message: set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc" 
+// Tcl Message: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc 
+// Tcl Command: 'puts -nonewline $fileId $data'
+// Tcl Message: set fileId [open $filename "w"] 
+// Tcl Message: file178 
+// Tcl Command: 'close $fileId'
+// Tcl Message: puts -nonewline $fileId $data 
+// Tcl Message: close $fileId 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property USED_IN {out_of_context synthesis implementation}  [get_files  /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/memory/new/memory_ooc.xdc] 
+dismissDialog("Set As Out-of-context Module"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC]", 6); // B (F, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,398 MB. GUI used memory: 79 MB. Current time: 12/12/19, 1:47:41 PM CST
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XDC]", 6); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), counter : counter (counter.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), counter : counter (counter.v)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectCodeEditor("cpu.v", 253, 149); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), counter : counter (counter.v)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET, "Set as Out-of-Context for Synthesis..."); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_OUT_OF_CONTEXT_FILESET
+// t (cr): Set as Out-of-Context for Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (t)
+// TclEventType: FILE_SET_NEW
+dismissDialog("Set as Out-of-Context for Synthesis"); // t (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_ADD
+// bB (cr):  Set As Out-of-context Module : addNotify
+// Tcl Message: create_fileset -blockset -define_from counter counter 
+// Tcl Message: INFO: [Vivado 12-2924] Moving file '/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/counter.v' from fileset 'sources_1' to fileset 'counter'. 
+// Tcl Message: file mkdir /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new 
+// Tcl Message: close [ open /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Command: 'set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.; ; # Add in a clock definition for each input clock to the out-of-context module.; # The module will be synthesized as top so reference the clock origin using get_ports.; # You will need to define a clock on each input clock port, no top level clock information; # is provided to the module when set as out-of-context.; # Here is an example:; # create_clock -name clk_200 -period 5 [get_ports clk]; }'
+// Tcl Message: add_files -fileset counter /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 81 MB. Current time: 12/12/19, 1:47:56 PM CST
+// Tcl Command: 'set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc"'
+// Tcl Message: set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] } 
+// Tcl Message: # (c) Copyright 2014 Xilinx, Inc. All rights reserved.  # Add in a clock definition for each input clock to the out-of-context module. # The module will be synthesized as top so reference the clock origin using get_ports. # You will need to define a clock on each input clock port, no top level clock information # is provided to the module when set as out-of-context. # Here is an example: # create_clock -name clk_200 -period 5 [get_ports clk] 
+// Tcl Command: 'set fileId [open $filename "w"]'
+// Tcl Message: set filename "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc" 
+// Tcl Message: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc 
+// Tcl Command: 'puts -nonewline $fileId $data'
+// Tcl Message: set fileId [open $filename "w"] 
+// Tcl Message: file178 
+// Tcl Command: 'close $fileId'
+// Tcl Message: puts -nonewline $fileId $data 
+// Tcl Message: close $fileId 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property USED_IN {out_of_context synthesis implementation}  [get_files  /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/counter/new/counter_ooc.xdc] 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Set As Out-of-context Module"); // bB (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Common 17-344] 'launch_runs' was cancelled 
+dismissDialog("Generate Bitstream"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("Basys3_Abacus_Top.v", 259, 438); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 282, 487); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 175, 470); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 239, 473); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 278, 496); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 272, 486); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,501 MB. GUI used memory: 79 MB. Current time: 12/12/19, 1:49:01 PM CST
+// [Engine Memory]: 2,493 MB (+7033kb) [00:32:06]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 13:49:08 2019] Launched cpu_synth_1, memory_synth_1, counter_synth_1, synth_1... Run output will be captured here: cpu_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/runme.log memory_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/memory_synth_1/runme.log counter_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/counter_synth_1/runme.log synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Thu Dec 12 13:49:09 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bB (cr)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Out-of-Context Module Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2); // az (O, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 456 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bB (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1188 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bB (cr)
+selectButton(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Hardware_auto_connect_target"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bB (cr):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.2   **** Build date : Nov  6 2019 at 22:13:42     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2019.2.0   **** Build date : Nov 07 2019-13:41:48     ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183739598A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// PAPropertyPanels.initPanels (XADC) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false); // t (O, cr)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 3, "XADC", 0, false, false, false, false, false, true); // t (O, cr) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_NEW_HARDWARE_DASHBOARD
+// a (cr): New Dashboard: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: HW_SYSMON_CHANGE
+// 'M' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  2128 ms.
+dismissDialog("New Dashboard"); // a (cr)
+// TclEventType: HW_SYSMON_CHANGE
+// Elapsed time: 108 seconds
+selectList(PAResourceQtoS.SysMonLegendPanel_SELECTABLE_LIST, "Temp  33.7°C", 0); // k (O, cr)
+selectList(PAResourceQtoS.SysMonLegendPanel_SELECTABLE_LIST, "Temp  33.8°C", 0); // k (O, cr)
+// A (cr): Delete Dashboard: addNotify
+// TclEventType: HW_SYSMON_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "dashboard_1"); // i
+dismissDialog("Delete Dashboard"); // A (cr)
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 0); // i (h, cr)
+// Elapsed time: 76 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 124, 348); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 105, 477); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 105, 477, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Basys3_Abacus_Top.v", 411, 321); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 93 MB. Current time: 12/12/19, 2:02:11 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 14:02:13 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 14:02:13 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 145 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 166 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 26 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 436, 450); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 127, 496); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 145, 480); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 40, 398); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 40, 398, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 46, 407); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 46, 407, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 48, 390); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 48, 390, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 56, 407); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 56, 407, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 54, 390); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 54, 390, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 56, 397); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 56, 397, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 55, 411); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 55, 411, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 52, 401); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 52, 401, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 54, 412); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 54, 412, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 118, 319); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 118, 319, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 151, 248); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 151, 248, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 645 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 1); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 6, true); // B (F, cr) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 6); // B (F, cr)
+// [GUI Memory]: 154 MB (+936kb) [01:03:14]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 7, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v), mem_unit : memory (memory.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("memory.v", 53, 102); // ch (w, cr)
+typeControlKey((HResource) null, "memory.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,571 MB. GUI used memory: 95 MB. Current time: 12/12/19, 2:20:26 PM CST
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 1); // i (h, cr)
+// Elapsed time: 252 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 149, 444); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 141, 458); // ch (w, cr)
+// Elapsed time: 186 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cr)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// I (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2508 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Implementation]", 4, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Bitstream]", 5, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Board Repository]", 2, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, IP Defaults]", 1, false); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Project]", 0, false); // L (E, I)
+// [GUI Memory]: 180 MB (+18901kb) [01:11:24]
+// Elapsed time: 50 seconds
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,626 MB. GUI used memory: 112 MB. Current time: 12/12/19, 2:29:16 PM CST
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,626 MB (+9226kb) [01:12:20]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 0); // i (h, cr)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 52 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 344, 337); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 334, 353); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 321, 397); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 310, 425); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 309, 409); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 308, 416); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 307, 419); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 304, 413); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 293, 426); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 48, 399); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 48, 399, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Basys3_Abacus_Top.v", 'c'); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 1); // i (h, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("cpu.v", 107, 226); // ch (w, cr)
+selectCodeEditor("cpu.v", 107, 226, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 103, 216); // ch (w, cr)
+selectCodeEditor("cpu.v", 103, 216, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 75, 268); // ch (w, cr)
+selectCodeEditor("cpu.v", 75, 268, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("cpu.v", 68, 256); // ch (w, cr)
+selectCodeEditor("cpu.v", 68, 256, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 0); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,661 MB. GUI used memory: 112 MB. Current time: 12/12/19, 2:35:26 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,733 MB. GUI used memory: 112 MB. Current time: 12/12/19, 2:35:56 PM CST
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 114 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+applyEscape(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, (String) null); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+dismissDialog("Settings"); // I (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// [Engine Memory]: 2,828 MB (+73671kb) [01:19:15]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// [GUI Memory]: 191 MB (+2260kb) [01:19:16]
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run memory_synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 2,820 MB. GUI used memory: 117 MB. Current time: 12/12/19, 2:36:16 PM CST
+// Tcl Message: [Thu Dec 12 14:36:15 2019] Launched memory_synth_1, synth_1... Run output will be captured here: memory_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/memory_synth_1/runme.log synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 14:36:15 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 550 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 2); // i (h, cr)
+// Elapsed time: 72 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 33 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 71 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 341, 396); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 146, 389); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 147, 382); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 157, 385); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,855 MB. GUI used memory: 117 MB. Current time: 12/12/19, 2:51:01 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 143 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 14:51:53 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 14:51:53 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,878 MB. GUI used memory: 116 MB. Current time: 12/12/19, 2:51:56 PM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 302 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true); // t (O, cr) - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cr)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 54 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 431, 437); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 560, 351); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), uut : PS2Receiver (PS2Receiver.v)]", 5, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), uut : PS2Receiver (PS2Receiver.v)]", 5, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("PS2Receiver.v", 174, 333); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 167, 302); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 158, 263); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 148, 234); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 140, 197); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 138, 183); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 137, 170); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 137, 166); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 137, 166, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PS2Receiver.v", 139, 160); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 150, 132); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("PS2Receiver.v", 147, 226); // ch (w, cr)
+selectCodeEditor("PS2Receiver.v", 147, 226, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,920 MB. GUI used memory: 120 MB. Current time: 12/12/19, 3:00:46 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,936 MB. GUI used memory: 120 MB. Current time: 12/12/19, 3:01:26 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,981 MB. GUI used memory: 120 MB. Current time: 12/12/19, 3:02:16 PM CST
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 2,981 MB (+12466kb) [01:45:20]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 202 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_LAUNCH
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 15:02:32 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 15:02:32 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 299 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("PS2Receiver.v", 157, 476); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 0); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("Basys3_Abacus_Top.v", 200, 492); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 162, 452); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 133, 489); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 500, 241); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,029 MB. GUI used memory: 125 MB. Current time: 12/12/19, 3:08:26 PM CST
+selectCodeEditor("Basys3_Abacus_Top.v", 130, 275); // ch (w, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // aa (q, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 418, 171); // ch (w, cr)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 428, 175); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 15:08:40 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 15:08:40 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 213 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("cpu.v", 366, 378); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 3); // i (h, cr)
+// Elapsed time: 78 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 224, 437); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 98, 470); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 98, 469, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Basys3_Abacus_Top.v", 224, 492); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 145, 326); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 337); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Basys3_Abacus_Top.v", 137, 290); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,057 MB. GUI used memory: 126 MB. Current time: 12/12/19, 3:14:51 PM CST
+// Elapsed time: 35 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 96, 399); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 0); // i (h, cr)
+selectCodeEditor("cpu.v", 135, 298); // ch (w, cr)
+selectCodeEditor("cpu.v", 135, 298, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PS2Receiver.v", 2); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 3); // i (h, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 336); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 336, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,089 MB. GUI used memory: 126 MB. Current time: 12/12/19, 3:16:16 PM CST
+selectCodeEditor("Basys3_Abacus_Top.v", 159, 70); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 159, 70, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("Basys3_Abacus_Top.v", 390, 322); // ch (w, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 316, 163); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 15:16:34 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 15:16:34 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 215 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 479); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 131, 479, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 255, 315); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,121 MB. GUI used memory: 125 MB. Current time: 12/12/19, 3:20:36 PM CST
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 343, 435); // ch (w, cr)
+// TclEventType: RUN_MODIFY
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 15:20:37 2019] Launched synth_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 15:20:37 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// aj (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 386 seconds
+dismissDialog("Bitstream Generation Completed"); // aj (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/Basys3_Abacus_Top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 393, 407); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 217, 437); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 73, 477); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 0); // i (h, cr)
+selectCodeEditor("cpu.v", 183, 327); // ch (w, cr)
+selectCodeEditor("cpu.v", 168, 326); // ch (w, cr)
+selectCodeEditor("cpu.v", 168, 326, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 179, 308); // ch (w, cr)
+selectCodeEditor("cpu.v", 179, 308, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 170, 319); // ch (w, cr)
+selectCodeEditor("cpu.v", 169, 319, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 170, 305); // ch (w, cr)
+selectCodeEditor("cpu.v", 170, 305, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 171, 296); // ch (w, cr)
+selectCodeEditor("cpu.v", 171, 296, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 167, 282); // ch (w, cr)
+selectCodeEditor("cpu.v", 167, 282, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 150, 263); // ch (w, cr)
+selectCodeEditor("cpu.v", 150, 262, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 149, 248); // ch (w, cr)
+selectCodeEditor("cpu.v", 149, 247, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 181, 233); // ch (w, cr)
+selectCodeEditor("cpu.v", 181, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 174, 215); // ch (w, cr)
+selectCodeEditor("cpu.v", 174, 215, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 162, 242); // ch (w, cr)
+selectCodeEditor("cpu.v", 161, 242, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 168, 233); // ch (w, cr)
+selectCodeEditor("cpu.v", 168, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 154, 263); // ch (w, cr)
+selectCodeEditor("cpu.v", 154, 263, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 150, 246); // ch (w, cr)
+selectCodeEditor("cpu.v", 150, 246, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 125, 198); // ch (w, cr)
+selectCodeEditor("cpu.v", 124, 197, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 121, 186); // ch (w, cr)
+selectCodeEditor("cpu.v", 120, 186, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 116, 173); // ch (w, cr)
+selectCodeEditor("cpu.v", 116, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 116, 159); // ch (w, cr)
+selectCodeEditor("cpu.v", 116, 159, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 213, 236); // ch (w, cr)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 3); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 0); // i (h, cr)
+selectCodeEditor("cpu.v", 167, 96); // ch (w, cr)
+selectCodeEditor("cpu.v", 180, 79); // ch (w, cr)
+// [Engine Memory]: 3,137 MB (+6795kb) [02:12:47]
+selectCodeEditor("cpu.v", 192, 66); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,156 MB. GUI used memory: 125 MB. Current time: 12/12/19, 3:30:06 PM CST
+// Elapsed time: 66 seconds
+selectCodeEditor("cpu.v", 98, 152); // ch (w, cr)
+selectCodeEditor("cpu.v", 75, 103); // ch (w, cr)
+selectCodeEditor("cpu.v", 70, 113); // ch (w, cr)
+selectCodeEditor("cpu.v", 67, 126); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 21 seconds
+selectCodeEditor("cpu.v", 279, 93); // ch (w, cr)
+selectCodeEditor("cpu.v", 141, 223); // ch (w, cr)
+selectCodeEditor("cpu.v", 147, 234); // ch (w, cr)
+selectCodeEditor("cpu.v", 23, 501); // ch (w, cr)
+selectCodeEditor("cpu.v", 61, 491); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,183 MB. GUI used memory: 125 MB. Current time: 12/12/19, 3:31:36 PM CST
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run cpu_synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 15:31:45 2019] Launched cpu_synth_1, synth_1... Run output will be captured here: cpu_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/runme.log synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 15:31:45 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Failed: addNotify
+// Elapsed time: 229 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // aj (cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net cpu_unit/interupt_ has multiple drivers: cpu_unit/interupt__reg/Q, and cpu_unit/interupt__reg__0/Q.. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;208;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. , [Synth 8-6859] multi-driven net on pin interupt_ with 2nd driver pin 'interupt__reg__0/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:195]. ]", 4, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v;-;;-;16;-;line;-;195;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, cpu_synth_1, [Synth 8-6859] multi-driven net on pin interupt_ with 1st driver pin 'interupt__reg/Q' [/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v:208]. ]", 3, true); // ah (O, cr) - Node
+selectCodeEditor("cpu.v", 163, 239); // ch (w, cr)
+selectCodeEditor("cpu.v", 134, 233); // ch (w, cr)
+selectCodeEditor("cpu.v", 134, 233, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 209, 242); // ch (w, cr)
+selectCodeEditor("cpu.v", 209, 242, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 207, 232); // ch (w, cr)
+selectCodeEditor("cpu.v", 207, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 110, 232); // ch (w, cr)
+selectCodeEditor("cpu.v", 110, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 112, 211); // ch (w, cr)
+selectCodeEditor("cpu.v", 121, 231); // ch (w, cr)
+selectCodeEditor("cpu.v", 121, 231, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 113, 220); // ch (w, cr)
+selectCodeEditor("cpu.v", 127, 239); // ch (w, cr)
+selectCodeEditor("cpu.v", 127, 239, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 115, 219); // ch (w, cr)
+selectCodeEditor("cpu.v", 129, 238); // ch (w, cr)
+selectCodeEditor("cpu.v", 129, 238, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 117, 226); // ch (w, cr)
+selectCodeEditor("cpu.v", 121, 230); // ch (w, cr)
+selectCodeEditor("cpu.v", 121, 230, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 116, 216); // ch (w, cr)
+selectCodeEditor("cpu.v", 124, 227); // ch (w, cr)
+selectCodeEditor("cpu.v", 124, 227, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 122, 215); // ch (w, cr)
+selectCodeEditor("cpu.v", 131, 228); // ch (w, cr)
+selectCodeEditor("cpu.v", 131, 228, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 123, 218); // ch (w, cr)
+selectCodeEditor("cpu.v", 133, 234); // ch (w, cr)
+selectCodeEditor("cpu.v", 133, 234, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 126, 221); // ch (w, cr)
+selectCodeEditor("cpu.v", 137, 234); // ch (w, cr)
+selectCodeEditor("cpu.v", 137, 234, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 126, 221); // ch (w, cr)
+selectCodeEditor("cpu.v", 135, 233); // ch (w, cr)
+selectCodeEditor("cpu.v", 135, 233, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 128, 221); // ch (w, cr)
+selectCodeEditor("cpu.v", 140, 235); // ch (w, cr)
+selectCodeEditor("cpu.v", 140, 235, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 131, 225); // ch (w, cr)
+selectCodeEditor("cpu.v", 135, 234); // ch (w, cr)
+selectCodeEditor("cpu.v", 135, 234, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 129, 223); // ch (w, cr)
+selectCodeEditor("cpu.v", 132, 229); // ch (w, cr)
+selectCodeEditor("cpu.v", 132, 229, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 120, 213); // ch (w, cr)
+selectCodeEditor("cpu.v", 131, 229); // ch (w, cr)
+selectCodeEditor("cpu.v", 131, 229, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 126, 219); // ch (w, cr)
+selectCodeEditor("cpu.v", 134, 233); // ch (w, cr)
+selectCodeEditor("cpu.v", 134, 233, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 128, 217); // ch (w, cr)
+selectCodeEditor("cpu.v", 136, 235); // ch (w, cr)
+selectCodeEditor("cpu.v", 136, 235, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 129, 225); // ch (w, cr)
+selectCodeEditor("cpu.v", 139, 238); // ch (w, cr)
+selectCodeEditor("cpu.v", 139, 238, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 131, 222); // ch (w, cr)
+selectCodeEditor("cpu.v", 137, 232); // ch (w, cr)
+selectCodeEditor("cpu.v", 137, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("cpu.v", 131, 222); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cpu.v", 59, 135); // ch (w, cr)
+selectCodeEditor("cpu.v", 108, 148); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cpu.v", 138, 132); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PS2Receiver.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 3); // i (h, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 166, 424); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 171, 431); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 176, 437); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 68, 464); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 75, 475); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 124, 329); // ch (w, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 143, 339); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,203 MB. GUI used memory: 125 MB. Current time: 12/12/19, 3:37:21 PM CST
+// Elapsed time: 25 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 206, 471); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("Basys3_Abacus_Top.v", 304, 457); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,224 MB. GUI used memory: 175 MB. Current time: 12/12/19, 3:38:05 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Basys3_Abacus_Top.v", 283, 420); // ch (w, cr)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 501, 324); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run cpu_synth_1 
+dismissDialog("Resetting Runs"); // bB (cr)
+// bB (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 15:38:18 2019] Launched cpu_synth_1, synth_1... Run output will be captured here: cpu_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/runme.log synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log [Thu Dec 12 15:38:18 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cpu.v", 0); // i (h, cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 29 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, cr)
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run cpu_synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bB (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,283 MB. GUI used memory: 123 MB. Current time: 12/12/19, 3:41:16 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,304 MB. GUI used memory: 123 MB. Current time: 12/12/19, 3:41:36 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,304 MB (+10943kb) [02:24:40]
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 169 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "memory.v", 0); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Abacus_Top.v", 1); // i (h, cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// bB (cr):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1325 ms.
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bB (cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+String[] filenames16706 = {"/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/uart_buf_con.v", "/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/uart_tx.v"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/uart_buf_con.v /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/bin2ascii.v /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/uart_tx.v} 
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 3,356 MB. GUI used memory: 121 MB. Current time: 12/12/19, 3:42:16 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 43 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1); // B (F, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v), cpu_unit : cpu (cpu.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Basys3_Abacus_Top (Basys3_Abacus_Top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (cr)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bB (cr)
+selectCodeEditor("Basys3_Abacus_Top.v", 209, 395); // ch (w, cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Dec 12 15:43:04 2019] Launched cpu_synth_1, synth_1... Run output will be captured here: cpu_synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/cpu_synth_1/runme.log synth_1: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/synth_1/runme.log 
+// bB (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Dec 12 15:43:04 2019] Launched impl_1... Run output will be captured here: /home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 514ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 273ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1627 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2178 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2812 ms. Increasing delay to 8436 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2085 ms.

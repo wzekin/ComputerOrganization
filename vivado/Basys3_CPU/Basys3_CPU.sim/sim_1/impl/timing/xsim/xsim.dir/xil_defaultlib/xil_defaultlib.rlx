@@ -1,0 +1,12 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.sim/sim_1/impl/timing/xsim/cpu_sim_time_impl.v,1576203948,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/counter.v,,Basys3_Abacus_Top;PS2Receiver;bin2ascii;cpu_alu;debouncer;debouncer_0;glbl;uart_buf_con;uart_tx,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sim_1/imports/new/cpu_sim.v,1576202743,verilog,,,,cpu_sim,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/alu.v,1576111517,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/pipe_controller.v,,alu,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/counter.v,1576111521,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/memory.v,,counter,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v,1576156490,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sim_1/imports/new/cpu_sim.v,,cpu,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/memory.v,1576203187,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/alu.v,,memory,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/pipe_controller.v,1576111542,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v,,pipe_controller,,,,,,,,
+/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/register.v,1576111671,verilog,,/home/zekin/Code/ComputerOrganization/vivado/Basys3_CPU/Basys3_CPU.srcs/sources_1/imports/hdl/cpu.v,,register,,,,,,,,

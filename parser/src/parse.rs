@@ -9,7 +9,7 @@ use std::convert::TryInto;
 
 #[derive(Debug, PartialEq)]
 pub enum AST<'a> {
-    Pos(u64),
+    Pos(u16),
     Symbol(&'a [u8]),
     Order(IComplie<'a>),
 }
@@ -22,6 +22,7 @@ pub enum IOrder {
     RRMOVQ = 0x38,
     MRMOVQ = 0x48,
     RMMOVQ = 0x58,
+    OUT = 0x80,
     ADDQ = 0x61,
     SUBQ = 0x62,
     MULQ = 0x63,
@@ -44,6 +45,7 @@ pub enum IOrder {
     JBE = 0x7C,
     CALL = 0xA0,
     RET = 0xB0,
+    IRET = 0xE0,
     CONST = 0xFF,
 }
 
@@ -59,15 +61,15 @@ pub struct IComplie<'a> {
 
     pub r_a: u8,
     pub r_b: u8,
-    pub val_c: u64,
+    pub val_c: u16,
     pub symbol: Option<&'a [u8]>,
     pub len: u8,
 }
 
 #[derive(Default, Debug)]
 pub struct IFile<'a> {
-    pub complies: BTreeMap<u64, IComplie<'a>>,
-    pub symbols: BTreeMap<&'a [u8], u64>,
+    pub complies: BTreeMap<u16, IComplie<'a>>,
+    pub symbols: BTreeMap<&'a [u8], u16>,
 }
 
 named!(method, take_while!(is_alphabetic));
@@ -119,21 +121,21 @@ fn parse_reg(input: &[u8]) -> IResult<&[u8], u8> {
     return Err(nom::Err::Failure((input, nom::error::ErrorKind::NoneOf)));
 }
 
-fn parse_val(input: &[u8]) -> IResult<&[u8], u64> {
+fn parse_val(input: &[u8]) -> IResult<&[u8], u16> {
     let (input, (_, value)) = tuple((tag("$"), digit0))(input)?;
     let value = std::str::from_utf8(value)
         .unwrap()
-        .parse::<u64>()
+        .parse::<u16>()
         .ok()
         .unwrap();
     return Ok((input, value));
 }
 
-fn parse_val_and_reg(input: &[u8]) -> IResult<&[u8], (u64, u8)> {
+fn parse_val_and_reg(input: &[u8]) -> IResult<&[u8], (u16, u8)> {
     let (input, (value, _, reg, _)) = tuple((digit0, tag("("), parse_reg, tag(")")))(input)?;
     let value = std::str::from_utf8(value)
         .unwrap()
-        .parse::<u64>()
+        .parse::<u16>()
         .ok()
         .unwrap();
     return Ok((input, (value, reg)));
@@ -163,7 +165,24 @@ fn parse_jxx_call(input: &[u8]) -> IResult<&[u8], AST> {
         AST::Order(IComplie {
             iorder: iorder,
             symbol: Some(symbol),
-            len: 9,
+            len: 3,
+            ..IComplie::default()
+        }),
+    ));
+}
+
+fn parse_out(input: &[u8]) -> IResult<&[u8], AST> {
+    let (input, (method, _, valA)) = tuple((method, space0, parse_reg))(input)?;
+    let iorder = match method {
+        b"OUT" | b"out" => IOrder::OUT,
+        _ => return Err(nom::Err::Error((input, nom::error::ErrorKind::Tag))),
+    };
+    return Ok((
+        input,
+        AST::Order(IComplie {
+            iorder: iorder,
+            len: 2,
+            r_a: valA,
             ..IComplie::default()
         }),
     ));
@@ -175,6 +194,7 @@ fn parse_ret_nop_halt(input: &[u8]) -> IResult<&[u8], AST> {
         b"HALT" | b"halt" => IOrder::HALT,
         b"NOP" | b"nop" => IOrder::NOP,
         b"RET" | b"ret" => IOrder::RET,
+        b"IRET" | b"iret" => IOrder::IRET,
         _ => return Err(nom::Err::Error((input, nom::error::ErrorKind::Tag))),
     };
     return Ok((
@@ -222,7 +242,7 @@ fn parse_irmovq(input: &[u8]) -> IResult<&[u8], AST> {
             iorder: IOrder::IRMOVQ,
             val_c,
             r_b,
-            len: 10,
+            len: 4,
             ..IComplie::default()
         }),
     ));
@@ -237,7 +257,7 @@ fn parse_irmovq_symbol(input: &[u8]) -> IResult<&[u8], AST> {
             iorder: IOrder::IRMOVQ,
             symbol: Some(symbol),
             r_b,
-            len: 10,
+            len: 4,
             ..IComplie::default()
         }),
     ));
@@ -253,7 +273,7 @@ fn parse_mrmovq(input: &[u8]) -> IResult<&[u8], AST> {
             val_c,
             r_b,
             r_a,
-            len: 10,
+            len: 4,
             ..IComplie::default()
         }),
     ));
@@ -269,7 +289,7 @@ fn parse_rmmovq(input: &[u8]) -> IResult<&[u8], AST> {
             val_c,
             r_b,
             r_a,
-            len: 10,
+            len: 4,
             ..IComplie::default()
         }),
     ));
@@ -277,13 +297,14 @@ fn parse_rmmovq(input: &[u8]) -> IResult<&[u8], AST> {
 
 fn parse_order(input: &[u8]) -> IResult<&[u8], AST> {
     return alt((
-        parse_irmovq,
-        parse_irmovq_symbol,
+        dbg_dmp(parse_irmovq, "parse_irmovq"),
+        dbg_dmp(parse_irmovq_symbol, "parse_irmovq_symbol"),
         parse_opq_rrmovq,
         parse_rmmovq,
         parse_mrmovq,
         parse_jxx_call,
         parse_ret_nop_halt,
+        parse_out,
     ))(input);
 }
 
@@ -291,7 +312,7 @@ fn parse_point(input: &[u8]) -> IResult<&[u8], AST> {
     let (input, (_, _, val)) = tuple((tag(".pos"), space0, digit0))(input)?;
     let val = std::str::from_utf8(val)
         .unwrap()
-        .parse::<u64>()
+        .parse::<u16>()
         .ok()
         .unwrap();
     return Ok((input, AST::Pos(val)));
@@ -301,7 +322,7 @@ fn parse_quad(input: &[u8]) -> IResult<&[u8], AST> {
     let (input, (_, _, val_c)) = tuple((tag(".quad"), space0, digit0))(input)?;
     let val_c = std::str::from_utf8(val_c)
         .unwrap()
-        .parse::<u64>()
+        .parse::<u16>()
         .ok()
         .unwrap();
     return Ok((
@@ -309,7 +330,7 @@ fn parse_quad(input: &[u8]) -> IResult<&[u8], AST> {
         AST::Order(IComplie {
             iorder: IOrder::CONST,
             val_c,
-            len: 8,
+            len: 2,
             ..IComplie::default()
         }),
     ));
@@ -364,7 +385,7 @@ mod tests {
             b"\n",
             AST::Order(IComplie {
                 iorder: IOrder::IRMOVQ,
-                val_c: 123456,
+                val_c: 3456,
                 r_b: 0,
                 len: 10,
                 ..IComplie::default()

@@ -27,8 +27,8 @@ fn main() -> std::io::Result<()> {
     let input = matches.value_of("input").unwrap();
     let out = matches.value_of("out");
     let data = readfile(input);
-    let (_, parsed_data) = parse_file(&data).ok().unwrap();
-    let parsed_data = check_symbol(parsed_data).ok().unwrap();
+    let (_, parsed_data) = parse_file(&data).ok().expect("parse failed");
+    let parsed_data = check_symbol(parsed_data).expect("check symbol failed");
     if out.is_some() {
         write_to_file(out.unwrap(), parsed_data)
     } else {

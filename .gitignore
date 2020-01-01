@@ -5,3 +5,6 @@
 *.mem
 build
 parser/target
+parser/parser
+vivado/Basys3_CPU/Basys3_CPU.cache
+

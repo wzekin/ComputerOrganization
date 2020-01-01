@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Sun Dec 15 18:10:57 2019
+| Host         : zekin-pc running 64-bit Manjaro Linux
+| Command      : report_bus_skew -warn_on_violation -file Basys3_Abacus_Top_bus_skew_routed.rpt -pb Basys3_Abacus_Top_bus_skew_routed.pb -rpx Basys3_Abacus_Top_bus_skew_routed.rpx
+| Design       : Basys3_Abacus_Top
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

@@ -19,7 +19,7 @@ pub fn readfile(filename: &str) -> Vec<String> {
 
 pub fn parse_file<'a>(lines: &'a Vec<String>) -> IResult<&[u8], IFile<'a>> {
     let mut ifile = IFile::default();
-    let mut pos: u64 = 0;
+    let mut pos: u16 = 0;
     for i in 0..lines.len() {
         let (_, ast) = parse(lines[i].as_bytes())?;
         match ast {
@@ -28,7 +28,7 @@ pub fn parse_file<'a>(lines: &'a Vec<String>) -> IResult<&[u8], IFile<'a>> {
                 ifile.symbols.insert(s, pos);
             }
             AST::Order(order) => {
-                let len: u64 = order.len.try_into().unwrap();
+                let len: u16 = order.len.try_into().unwrap();
                 ifile.complies.insert(pos, order);
                 pos = pos + len;
             }
@@ -56,15 +56,15 @@ pub fn check_symbol(mut ifile: IFile) -> Result<IFile, String> {
 }
 
 pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
-    let mut pos: u64 = 0;
+    let mut pos: u16 = 0;
     let mut file = File::create(filename)?;
     for (p, val) in ifile.complies.iter() {
         while pos < p.clone() {
-            write!(file, "00000000\n")?;
+            write!(file, "{:08b}\n", IOrder::HALT as u8)?;
             pos += 1;
         }
         match val.iorder {
-            HALT | RET | NOP => {
+            HALT | RET | NOP | IRET => {
                 write!(file, "{:08b}\n", val.iorder as u8)?;
                 pos += 1
             }
@@ -73,9 +73,9 @@ pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
                 for byte in val.val_c.to_le_bytes().iter() {
                     write!(file, "{:08b}\n", byte)?;
                 }
-                pos += 9
+                pos += 3
             }
-            RRMOVQ | ADDQ | SUBQ | MULQ | DIVQ | ANDQ | ORQ | XORQ => {
+            RRMOVQ | ADDQ | SUBQ | MULQ | DIVQ | ANDQ | ORQ | XORQ | OUT => {
                 write!(file, "{:08b}\n", val.iorder as u8)?;
                 write!(file, "{:04b}{:04b}\n", val.r_a, val.r_b)?;
                 pos += 2
@@ -86,16 +86,19 @@ pub fn write_to_file(filename: &str, ifile: IFile) -> std::io::Result<()> {
                 for byte in val.val_c.to_le_bytes().iter() {
                     write!(file, "{:08b}\n", byte)?;
                 }
-                pos += 10
+                pos += 4
             }
             CONST => {
                 for byte in val.val_c.to_le_bytes().iter() {
                     write!(file, "{:08b}\n", byte)?;
                 }
-                pos += 8
+                pos += 2
             }
         }
-        write!(file, "\n")?;
+    }
+    while pos < 512 {
+        write!(file, "{:08b}\n", IOrder::HALT as u8)?;
+        pos += 1;
     }
     Ok(())
 }

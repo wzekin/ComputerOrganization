@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_sim_func_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3794561fs"></ZoomStartTime>
+      <ZoomEndTime time="3981328fs"></ZoomEndTime>
+      <Cursor1Time time="3950200fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject type="logic" fp_name="/cpu_sim/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/block">
+      <obj_property name="ElementShortName">block</obj_property>
+      <obj_property name="ObjectShortName">block</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/reset1">
+      <obj_property name="ElementShortName">reset1</obj_property>
+      <obj_property name="ObjectShortName">reset1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/interupt">
+      <obj_property name="ElementShortName">interupt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">interupt[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/out">
+      <obj_property name="ElementShortName">out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/out_ready">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/Stat">
+      <obj_property name="ElementShortName">Stat[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Stat[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/m_valM">
+      <obj_property name="ElementShortName">m_valM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_valM[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/mem_addr">
+      <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/f_pc">
+      <obj_property name="ElementShortName">f_pc[15:0]</obj_property>
+      <obj_property name="ObjectShortName">f_pc[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/mem_m_out">
+      <obj_property name="ElementShortName">mem_m_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_m_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/mem_out">
+      <obj_property name="ElementShortName">mem_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/t1">
+      <obj_property name="ElementShortName">t1</obj_property>
+      <obj_property name="ObjectShortName">t1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/t2">
+      <obj_property name="ElementShortName">t2</obj_property>
+      <obj_property name="ObjectShortName">t2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/t3">
+      <obj_property name="ElementShortName">t3</obj_property>
+      <obj_property name="ObjectShortName">t3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/mem_write">
+      <obj_property name="ElementShortName">mem_write</obj_property>
+      <obj_property name="ObjectShortName">mem_write</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/keyboard_input">
+      <obj_property name="ElementShortName">keyboard_input[15:0]</obj_property>
+      <obj_property name="ObjectShortName">keyboard_input[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_sim/out_reg">
+      <obj_property name="ElementShortName">out_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/cpu_unit/alu_unit/of">
+      <obj_property name="ElementShortName">of</obj_property>
+      <obj_property name="ObjectShortName">of</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/cpu_unit/alu_unit/zf">
+      <obj_property name="ElementShortName">zf</obj_property>
+      <obj_property name="ObjectShortName">zf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_sim/cpu_unit/alu_unit/cf">
+      <obj_property name="ElementShortName">cf</obj_property>
+      <obj_property name="ObjectShortName">cf</obj_property>
+   </wvobject>
+</wave_config>
